@@ -1,11 +1,13 @@
-import MenuBar from '../components/MenuBar';
+import MenuBar from '../../components/MenuBar';
 
 export default function Home() {
   return (
-    <><MenuBar />
-      <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        <h1 className="text-4xl font-bold text-blue-600">Homepage</h1>
-        <p className="mt-4 text-lg text-gray-700">ยินดีต้อนรับสู่เว็บของเรา</p>
+    <>
+      <main className="flex flex-col items-center justify-center min-h-screen bg-white">
+        <h1 className="text-[3rem] font-bold text-[#2400C4] max max-w-[48rem] italic mt-[-5rem]">" I see possibilities where others see limitations. Blending 3D and fashion, I'm redefining design."  </h1>
+        <p className="mt-16 text-lg text-[#2400C4] bg-white border border-[#2400C4] p-2 px-4 rounded-[50pt] cursor-pointer transition-colors duration-300 hover:bg-[#1A0099] hover:text-white">
+        more
+      </p>
       </main>
     </>
   );
