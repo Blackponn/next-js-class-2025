@@ -4,6 +4,7 @@ export default function Work() {
   return (
     <>
       <div className="wrapper px-4 py-4">
+        {/* in class assignment */}
         {/*TOP BAR HEADER*/}
       <header className="db flex justify-between items-center mb-[16px]">
       <h1 className="text-[36px] text-[#3C25A4] font-bold">ARCHAWIT</h1>

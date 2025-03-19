@@ -3,6 +3,7 @@ import MenuBar from '../../components/MenuBar';
 export default function About() {
   return (
     <>
+    {/* Assignmentที่เป็นการบ้าน */}
       <main style={{ marginTop: '5rem' }} className="flex flex-col items-start pl-[8rem] min-h-screen bg-white-50">
       <div
           style={{

@@ -4,6 +4,7 @@ import MenuBar from '../../components/MenuBar';
 export default function Contact() {
   return (
     <>
+    {/* in class assignment */}
       <div className="wrapper p-[16px] flex flex-col">
         <h1>Contact</h1>
         <ContactCard name="Archawit" description="Industrial Student" imageUrl="https://avatar.iran.liara.run/publictest?=1"/>

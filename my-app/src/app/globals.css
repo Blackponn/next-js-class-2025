@@ -22,9 +22,7 @@ body {
 }
 
 @media (min-width:800px) {
-  body {
-    display: none;
-  }
+
   .warning {
     display: block;
   }
