@@ -9,14 +9,14 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Montserrat , sans-serif;
+  font-family: var(--font-montserrat);
   margin: 0;
   padding: 0;
 }
 
-.db{
+/* .db{
   border: 1px solid red;
-}
+} */
 .warning {
   display: none;
 }
