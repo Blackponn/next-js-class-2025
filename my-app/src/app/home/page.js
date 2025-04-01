@@ -1,6 +1,14 @@
 import MenuBar from '../../components/MenuBar';
+import DogCard from '../../components/DogCard';
 
-export default function Home() {
+export default async function Home() {
+  const response = await fetch("https://dogapi.dog/api/v2/breeds")
+  const resJson = await response.json()
+  const dogs = resJson.data
+
+console.log(dogs)
+
+
   return (
     <>
     {/* Assignmentที่เป็นการบ้าน */}
@@ -10,6 +18,12 @@ export default function Home() {
         more
       </p>
       </main>
+
+For Dog
+    { dogs.map(dog => (
+      <DogCard name={dog.attributes.name} description={dog.attributes.description} key={dog.name}/>
+    )) }
+
     </>
   );
 }
