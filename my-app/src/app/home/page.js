@@ -19,7 +19,7 @@ console.log(books)
       </p>
       </main>
 
-For Book
+    <div className="text-[48px] font-bold text-[#2400C4]">Books from my favorite writer "Stephen King"</div>
     <div className="grid grid-cols-3 gap-4">
     { books.map(book => (
       <BookCard 
