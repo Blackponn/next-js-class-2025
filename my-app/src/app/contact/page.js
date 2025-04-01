@@ -2,6 +2,7 @@ import ContactCard from '@/components/ContactCard';
 import MenuBar from '../../components/MenuBar';
 
 export default function Contact() {
+  
   return (
     <>
     {/* in class assignment */}

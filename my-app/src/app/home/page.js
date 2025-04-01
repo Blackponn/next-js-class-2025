@@ -1,12 +1,12 @@
 import MenuBar from '../../components/MenuBar';
-import DogCard from '../../components/DogCard';
+import BookCard from '../../components/BookCard';
 
 export default async function Home() {
-  const response = await fetch("https://dogapi.dog/api/v2/breeds")
+  const response = await fetch("https://stephen-king-api.onrender.com/api/books")
   const resJson = await response.json()
-  const dogs = resJson.data
+  const books = resJson.data
 
-console.log(dogs)
+console.log(books)
 
 
   return (
@@ -19,11 +19,16 @@ console.log(dogs)
       </p>
       </main>
 
-For Dog
-    { dogs.map(dog => (
-      <DogCard name={dog.attributes.name} description={dog.attributes.description} key={dog.name}/>
+For Book
+    <div className="grid grid-cols-3 gap-4">
+    { books.map(book => (
+      <BookCard 
+      Title={book.Title} 
+      Year={book.Year} 
+      Publisher={book.Publisher} 
+      key={book.name}/>
     )) }
-
+</div>
     </>
   );
 }
